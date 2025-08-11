@@ -22,6 +22,9 @@ Deploy a simple **Nginx application** in a Kubernetes cluster locally using **Mi
 ```
 curl -LO https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
 sudo install minikube-linux-amd64 /usr/local/bin/minikube
+
+snap install kubectl or apt install -y kubectl
+
 ```
 # Start a MINIKUBE local cluster:
 `minikube start --driver=docker`
