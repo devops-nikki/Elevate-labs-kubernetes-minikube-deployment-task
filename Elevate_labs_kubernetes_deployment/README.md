@@ -141,7 +141,7 @@ kubectl get pods
  apt install -y firefox
  ```
  Example Output:
-|-----------|-----------------|-------------|---------------------------|
+
 | NAMESPACE |      NAME       | TARGET PORT |            URL            |
 |-----------|-----------------|-------------|---------------------------|
 | default   | my-app-service  |          80 | http://192.168.49.2:30007 |
