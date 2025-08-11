@@ -125,6 +125,29 @@ kubectl get pods
 
 ---
 
+### Accessing the Service 
+ After applying the service.yaml, run:
+
+ ```
+ minikube service my-app-service
+ ```
+ This command will automatically open the application in your default browser.
+ In this setup, I accessed it locally using `firefox`
+
+ If in case browser is not available in your local Ubuntu machine , you can download using a command:
+ 
+ ```
+ apt get update
+ apt install -y firefox
+ ```
+ Example Output:
+
+|-----------|-----------------|-------------|---------------------------|
+| NAMESPACE |      NAME       | TARGET PORT |            URL            |
+|-----------|-----------------|-------------|---------------------------|
+| default   | my-app-service  |          80 | http://192.168.49.2:30007 |
+|-----------|-----------------|-------------|---------------------------|
+
 ### 6️⃣ Checked Logs
 
 - Fetched logs from a running Nginx pod:
@@ -176,10 +199,14 @@ kubectl logs <pod_name>
 
 ```
 .
+Elevate_labs_kubernetes_deployment/
 ├── deployment.yaml
 ├── service.yaml
 ├── screenshots/
-│   └── app-deploy-in-Kubernetes.png
+│   |── all_kubectl_commands.png
+|   |── kubectl_describe.png
+|   |── kubectl_logs.png
+|   |── service_running_browser.mp4
 └── README.md
 ```
 
